@@ -2,6 +2,7 @@
 title: Hello World:本站的第一篇文章
 description: 博客正式开张,记录搭建这个 Hugo 博客的过程与踩坑。
 date: 2026-09-18
+slug: hello-world
 draft: false
 tags:
   - Notes
@@ -27,6 +28,7 @@ categories:
 ---
 title: 文章标题
 date: 2026-09-18
+slug: hello-world
 tags: [Notes]
 categories: [Programming]
 ---
