@@ -69,4 +69,5 @@ pagination.pagerSize = 5
     identifier = 'github'
     name = 'GitHub'
     url = 'https://github.com/your-username'
-    pre = 'github'
+    [menu.social.params]
+        icon = 'brand-github'
