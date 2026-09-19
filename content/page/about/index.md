@@ -11,13 +11,11 @@ menu:
 
 ## 关于本站
 
-欢迎来到我的博客!这里记录我的技术学习、思考与生活随笔。
-
-网站使用 [Hugo](https://gohugo.io/) 构建,主题为 [Stack](https://github.com/CaiJimmy/hugo-theme-stack),托管在 GitHub Pages 上。
+欢迎。这里会记录我的一些学习过程或者碎碎念。
 
 ## 关于我
 
-- **邮箱**: [hello@example.com](mailto:hello@example.com)
-- **GitHub**: [your-username](https://github.com/your-username)
+- 邮箱: [apeirianetwork@outlook.com](mailto:apeirianetwork@outlook.com)
+- GitHub: [MigitaRin](https://github.com/NctimeAza)
 
-> "Abstractness is the price of generality."
+> “人们太渴望成功了，太执着于目的，而忘了过程同样重要。”

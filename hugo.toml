@@ -1,7 +1,7 @@
 baseURL = '/'
 languageCode = 'zh-cn'
 defaultContentLanguage = 'zh-cn'
-title = 'My Blog'
+title = 'Rin的小窝'
 theme = 'stack'
 pagination.pagerSize = 5
 
@@ -11,7 +11,7 @@ pagination.pagerSize = 5
 
 [params]
     mainSections = ['post']
-    favicon = 'img/avatar.png'
+    favicon = 'img/avatar.jpg'
 
     [params.footer]
         since = 2026
@@ -22,10 +22,10 @@ pagination.pagerSize = 5
         lastUpdated = 'Jan 02, 2006'
 
     [params.sidebar]
-        subtitle = 'Abstractness is the price of generality'
+        subtitle = '人们太渴望成功了，太执着于目的，而忘了过程同样重要。'
         emoji = ''
         compact = false
-        avatar = 'img/avatar.png'
+        avatar = 'img/avatar.jpg'
 
     [params.article]
         headingAnchor = true
@@ -68,6 +68,6 @@ pagination.pagerSize = 5
 [[menu.social]]
     identifier = 'github'
     name = 'GitHub'
-    url = 'https://github.com/your-username'
+    url = 'https://github.com/NctimeAza'
     [menu.social.params]
         icon = 'brand-github'

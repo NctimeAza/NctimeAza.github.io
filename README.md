@@ -7,7 +7,7 @@
 ```
 ├── .github/workflows/hugo.yml   # GitHub Actions 自动部署 workflow
 ├── hugo.toml                    # 站点主配置(菜单、widgets、侧边栏、配色)
-├── assets/img/avatar.png        # 头像(替换成你自己的)
+├── assets/img/avatar.jpg        # 头像(替换成你自己的)
 ├── archetypes/                  # 新文章模板
 ├── content/
 │   ├── _index.md                # 首页(菜单:首页)
@@ -58,7 +58,7 @@ hugo new content post/my-first-post.md
 |---|---|
 | 站点标题 | `hugo.toml` 的 `title` |
 | 副标题(现同 sdl.moe: "Abstractness is the price of generality") | `hugo.toml` 的 `[params.sidebar].subtitle` |
-| 头像 | 覆盖 `assets/img/avatar.png` |
+| 头像 | 覆盖 `assets/img/avatar.jpg` |
 | 侧边栏菜单(首页/关于/归档/搜索/友链) | 各页面 front matter 的 `menu.main` |
 | 右侧栏小工具(搜索/归档/标签云) | `hugo.toml` 的 `[params.widgets]` |
 | 默认配色(当前 auto,首访跟随系统;可在左下角切换明暗) | `hugo.toml` 的 `[params.colorScheme].default` |

@@ -1,6 +1,6 @@
 ---
-title: Hello World:本站的第一篇文章
-description: 博客正式开张,记录搭建这个 Hugo 博客的过程与踩坑。
+title: BLOG已设立！
+description: 我的第一篇博客，一切开始的地方
 date: 2026-09-18
 slug: hello-world
 draft: false
@@ -10,36 +10,15 @@ categories:
   - Programming
 ---
 
-欢迎来到我的博客!这是本站的第一篇文章。
+欢迎欢迎，我已恭候多时了。
 
-## 为什么用 Hugo + Stack
+不论你在何时何地看到这篇博客，我都衷心祝你幸福。
 
-这个网站使用 [Hugo](https://gohugo.io/) 静态站点生成器构建,搭配 [Stack](https://github.com/CaiJimmy/hugo-theme-stack) 主题,通过 GitHub Actions 自动部署到 GitHub Pages。
+## 说回我自己吧
+我是MigitaRin，一名中国学生，热衷于计算机相关的技术。我自幼便开始接触计算机，初中开始编写代码，并参与过一些开源项目的开发，在这方面有一定的经验。
 
-主要优点:
+以前一直觉得blog没什么好写的，可现如今回首，竟发现自己没在这个世界上留下多少痕迹，不免觉得有些遗憾。
 
-1. **构建速度快**:Hugo 是目前最快的静态站点生成器之一
-2. **完全免费**:GitHub Pages 托管,无需服务器
-3. **外观现代**:Stack 主题采用卡片式设计,支持深色模式
+所以，就让这里成为一切的开始吧。
 
-## 写作体验
-
-```markdown
----
-title: 文章标题
-date: 2026-09-18
-slug: hello-world
-tags: [Notes]
-categories: [Programming]
----
-
-正文内容,支持标准 Markdown……
-```
-
-## 接下来
-
-- 换上自己的头像(`assets/img/avatar.png`)
-- 修改 `hugo.toml` 中的站点标题
-- 把仓库推送到 GitHub 并启用 Pages
-
-> "Abstractness is the price of generality."
+> “千锤百炼的恶徒才是真正的求知者”
