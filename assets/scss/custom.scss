@@ -1,0 +1,90 @@
+/* 文章页布局:仿 sdl.moe 的 has-toc 模式
+   - 隐藏左侧边栏(所有尺寸)
+   - BACK 按钮在桌面端也显示,并吸附在右侧 TOC 旁
+   - 右侧 TOC 栏在 xl 断点显示 */
+.article-page .left-sidebar {
+    display: none !important;
+}
+
+/* 非文章页面隐藏工具栏(工具栏仅在文章页出现) */
+#article-toolbar {
+    display: none;
+}
+
+.article-page #article-toolbar {
+    display: block;
+    order: -3;
+}
+
+.article-page #article-toolbar {
+    padding: 0;
+
+    @include respond(md) {
+        margin-top: 0;
+        position: sticky;
+        top: var(--main-top-padding);
+        flex-shrink: 1;
+    }
+}
+
+.article-page #article-toolbar a {
+    background: var(--card-background);
+    border-radius: var(--tag-border-radius);
+    color: var(--card-text-color-tertiary);
+    margin-right: 30px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 15px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: var(--shadow-l1);
+
+    @include respond(xl) {
+        background: 0 0;
+        box-shadow: none;
+        border: 1px solid var(--body-text-color);
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.article-page #article-toolbar a:hover {
+    box-shadow: var(--shadow-l2);
+
+    @include respond(xl) {
+        box-shadow: none;
+    }
+}
+
+.article-page #article-toolbar a svg {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.article-page #article-toolbar a span {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* 主内容容器:在 xl 断点保持三栏(隐藏的左栏让 TOC 占据左侧空位,
+   视觉效果与 sdl.moe 相同:BACK 在左,正文居中,TOC 在右) */
+.article-page .main-container {
+    align-items: start;
+
+    @include respond(xl) {
+        flex-direction: row;
+    }
+}
+
+.article-page .main {
+    @include respond(md) {
+        padding-top: 0;
+    }
+
+    @include respond(xl) {
+        padding-top: var(--main-top-padding);
+    }
+}

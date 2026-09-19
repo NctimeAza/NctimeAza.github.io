@@ -1,6 +1,7 @@
 baseURL = '/'
 languageCode = 'zh-cn'
 defaultContentLanguage = 'zh-cn'
+languageName = 'zh-cn'
 title = 'Rin的小窝'
 theme = 'stack'
 pagination.pagerSize = 5

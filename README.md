@@ -1,4 +1,4 @@
-# My Blog (Hugo + Theme Stack)
+# Rin的小窝 (Hugo + Theme Stack)
 
 一个从零搭建、外观仿照 [sdl.moe](https://sdl.moe/) 的个人博客:使用 **Hugo** 静态站点生成器 + **Theme Stack** 卡片式主题(与 sdl.moe 同款主题),托管在 **GitHub Pages** 上,由 GitHub Actions 自动构建部署。
 
@@ -66,6 +66,14 @@ hugo new content post/my-first-post.md
 | 页脚起始年份 | `hugo.toml` 的 `[params.footer].since` |
 
 已同步 sdl.moe 的布局:三栏结构(左侧菜单栏 / 中间文章卡片流 / 右侧 widgets)、卡片 10px 圆角、暗色背景 `rgb(48,48,48)`、文章列表含分类标签与阅读时长、归档页按年分组、搜索页(含 JSON 索引)。
+
+## 已复刻的 sdl.moe 细节
+
+- **阅读时长**:文章卡片与文章页头部显示"阅读时长: N 分钟"(`[params.article].readingTime = true`)。中文文案由站点级 `i18n/zh-cn.toml` 提供 —— 因站点语言为 `zh-cn` 而主题只有 `zh.toml`,Hugo 默认匹配不到,必须用站点级 i18n 文件覆盖。
+- **文章页布局(has-toc)**:点入文章后左侧菜单栏隐藏,取而代之的是左上角"返回"按钮;正文居中,目录(TOC)显示在右侧边栏。实现方式:
+  - `layouts/baseof.html`(站点覆盖):给 `<body>` 加 `has-toc` class,并在 main 前插入 `#article-toolbar`(BACK 按钮);
+  - `layouts/_partials/article/article.html`(站点覆盖):移除主题原版文章内联 TOC(避免与右侧 TOC 重复);
+  - `assets/scss/custom.scss`:非文章页隐藏工具栏(`#article-toolbar { display: none }`)、文章页隐藏左侧栏并按 sdl.moe 的断点(md/xl)复刻 sticky 返回按钮、右侧 TOC 布局。
 
 ## 常用命令
 
