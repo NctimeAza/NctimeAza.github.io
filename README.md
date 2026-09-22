@@ -54,7 +54,7 @@ hugo new content post/my-first-post.md
 
 ## 个性化(仿 sdl.moe 的配置已就位)
 
-| 想改什么 | 改哪里 |
+| 想改什么 | 改哪里 | 
 |---|---|
 | 站点标题 | `hugo.toml` 的 `title` |
 | 副标题(现同 sdl.moe: "Abstractness is the price of generality") | `hugo.toml` 的 `[params.sidebar].subtitle` |
