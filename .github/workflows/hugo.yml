@@ -39,18 +39,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - name: Install Hugo Modules
-        run: |
-          [[ -f package-lock.json || -f npm-shrinkwrap.json ]] || npm list --package-lock-only > /dev/null
-          hugo mod npm pack
-          npm install
-        # 本项目以 themes/stack 子模块方式使用主题,通常没有 package.json;
-        # 此步骤只为兼容主题的 npm 资产,可按需保留或删除
 
       - name: Build site with Hugo
         env:
